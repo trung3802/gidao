@@ -48,6 +48,7 @@ import { MyOrderComponent } from './components/client/my-order/my-order.componen
 import { SearchComponent } from './components/client/search/search.component';
 import { LoginPageComponent } from './components/client/login-page/login-page.component';
 import { ChartsComponent } from './components/admin/charts/charts.component';
+import { EmailVerificationComponent } from './components/client/email-verification/email-verification.component';
 
 
 @NgModule({
@@ -73,6 +74,7 @@ import { ChartsComponent } from './components/admin/charts/charts.component';
     SearchComponent,
     LoginPageComponent,
     ChartsComponent,
+    EmailVerificationComponent,
 
   ],
   imports: [

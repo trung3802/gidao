@@ -21,6 +21,7 @@ import { UserDetailComponent } from './components/client/user-detail/user-detail
 import { AuthGuardService } from './_service/auth-guard.service';
 import { RoleGuardService } from './_service/role-guard.service';
 import { ChartsComponent } from './components/admin/charts/charts.component';
+import { EmailVerificationComponent } from './components/client/email-verification/email-verification.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,7 @@ const routes: Routes = [
       {path:'product/:id',component:ProductDetailComponent},
       {path:'blog',component: BlogClientComponent},
       {path:'blog/:id',component:BlogDetailComponent},
+      {path:'email-verification',component:EmailVerificationComponent},
       {path:'user',component:UserDetailComponent,canActivate: [AuthGuardService]},
       {path:'my-order',component:MyOrderComponent,canActivate: [AuthGuardService]},
       {path:'search/:keyword',component:SearchComponent}

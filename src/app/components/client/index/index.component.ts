@@ -134,6 +134,9 @@ export class IndexComponent implements OnInit {
         this.isSignUpFailed = false;
         this.showSuccess("Đăng ký thành công")
         this.authModal = false;
+
+         // Chuyển hướng đến trang xác minh (veri)
+      this.router.navigate(['/email-verification']);
       },error: err =>{
         this.showError(err.message);
         this.errorMessage = err.error.message;
